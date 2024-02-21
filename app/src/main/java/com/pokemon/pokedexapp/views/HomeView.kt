@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -84,10 +85,15 @@ fun PokemonItem(pokemon: PokeItem) {
             )
         }
         Spacer(modifier = Modifier.height(16.dp))
-        Text(
-            text = pokemon.name,
-            modifier = Modifier.align(Alignment.CenterHorizontally)
-        )
+        Row(modifier = Modifier.align(Alignment.CenterHorizontally)){
+            Text(
+                text = pokemon.name,
+            )
+            Spacer(modifier = Modifier.width(8.dp))
+            Text(
+                text = pokemon.formatId,
+            )
+        }
     }
 }
 
