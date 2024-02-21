@@ -45,40 +45,4 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
-
-
-    @Composable
-    fun PokemonList(pokemonList: List<PokeItem>) {
-        LazyColumn {
-            items(pokemonList) { pokemon ->
-                PokemonItem(pokemon)
-            }
-        }
-    }
-
-    @Composable
-    fun PokemonItem(pokemon: PokeItem) {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .wrapContentHeight()
-                .padding(10.dp)
-        ) {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.Center
-            ) {
-                AsyncImage(
-                    model = pokemon.img,
-                    contentDescription = "Pokemon",
-                    modifier = Modifier.size(150.dp)
-                )
-            }
-            Spacer(modifier = Modifier.height(16.dp))
-            Text(
-                text = pokemon.name,
-                modifier = Modifier.align(Alignment.CenterHorizontally)
-            )
-        }
-    }
 }

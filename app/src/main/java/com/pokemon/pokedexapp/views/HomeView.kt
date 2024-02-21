@@ -40,15 +40,18 @@ import com.pokemon.pokedexapp.viewModel.PokemonViewModel
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun HomeView(viewModel: PokemonViewModel, navController: NavController) {
+
+    val pokemonList by remember { viewModel.pokemonListState }
+
     Scaffold(
         topBar = {
             MainTopBar(title = "PokemonApp") {
             }
-
         }
     ) {
-        val pokemonList by remember { viewModel.pokemonListState }
-        PokemonList(pokemonList)
+
+       PokemonList(pokemonList)
+
     }
 }
 
@@ -107,5 +110,4 @@ fun MainTopBar(title: String, showBackButton:Boolean=false, onClickBackButton:()
         }
 
     )
-
 }
