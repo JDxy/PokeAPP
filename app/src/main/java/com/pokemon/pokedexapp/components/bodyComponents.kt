@@ -1,0 +1,24 @@
+package com.pokemon.pokedexapp.components
+
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
+
+// Función componible para agregar espacio vertical
+@Composable
+fun SpacerV(size: Dp = 500.dp){
+    Spacer(modifier = Modifier.height(size))
+}
+
+// Función componible para agregar espacio horizontal
+@Composable
+fun SpacerH(size: Dp = 500.dp){
+    Spacer(modifier = Modifier.width(size))
+}
