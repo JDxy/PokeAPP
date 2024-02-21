@@ -5,27 +5,12 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.remember
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
-import coil.compose.AsyncImage
-import com.pokemon.pokedexapp.domain.model.PokeItem
 import com.pokemon.pokedexapp.navigation.NavManager
 import com.pokemon.pokedexapp.ui.theme.PokedexAPPTheme
 import com.pokemon.pokedexapp.viewModel.PokemonViewModel
-import com.pokemon.pokedexapp.views.HomeView
-
 
 class MainActivity : ComponentActivity() {
     private val viewModel: PokemonViewModel by viewModels()

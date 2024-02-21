@@ -2,9 +2,7 @@ package com.pokemon.pokedexapp.data.model
 
 import com.google.gson.annotations.SerializedName
 
-
 // https://pokeapi.co/api/v2/pokemon/25/
-
 data class PokeModelDetails(
     @SerializedName("id") val id: Int,
     @SerializedName("height") val height: Int,
@@ -13,9 +11,7 @@ data class PokeModelDetails(
     @SerializedName("stats") val pokemonDetails: List<Stats>,
     @SerializedName("types") val types: List<Types>,
     @SerializedName("weight") val weight: Int,
-
-    // falta:
-    // - debelidades -> Array
+    // falta: debelidades -> Array
 )
 
 data class Sprites(

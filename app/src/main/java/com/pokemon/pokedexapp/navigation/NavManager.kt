@@ -27,6 +27,5 @@ fun NavManager(viewModel: PokemonViewModel) {
             DetailView(viewModel, navController, id)
         }
    */
-
     }
 }

@@ -3,7 +3,6 @@ package com.pokemon.pokedexapp.domain.model
 import com.pokemon.pokedexapp.data.model.PokeModelDetails
 import com.pokemon.pokedexapp.data.model.Types
 import java.util.*
-
 data class PokeItemDetails(
     val id: String,
     val name: String,
@@ -18,7 +17,6 @@ data class PokeItemDetails(
     val weight: Double,
     val height: Double
 )
-
 fun PokeModelDetails.toDomain(): PokeItemDetails {
     val id = "N° ${id.toString().padStart(3,'0')}"
     val name = replaceFirstChar(name)
@@ -43,7 +41,6 @@ private fun getTypes(types: List<Types>): List<String> {
         listOf(replaceFirstChar(types[0].type.name))
     }
 }
-
 private fun replaceFirstChar(t: String): String {
     return t.replaceFirstChar {
         // cada nombre con Mayuscula

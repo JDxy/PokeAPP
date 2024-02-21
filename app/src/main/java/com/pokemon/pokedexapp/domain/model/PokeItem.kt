@@ -2,7 +2,6 @@ package com.pokemon.pokedexapp.domain.model
 
 import com.pokemon.pokedexapp.data.model.PokeModel
 import java.util.*
-
 data class PokeItem(
     val id: Int,
     val name: String,

@@ -28,7 +28,6 @@ import kotlinx.coroutines.launch
             observer(pokemonList)
         }
     }
-
     private fun fetchPokemons() {
         viewModelScope.launch(Dispatchers.IO) {
             try {
@@ -41,7 +40,6 @@ import kotlinx.coroutines.launch
 
         }
     }
-
     init {
         fetchPokemons()
     }

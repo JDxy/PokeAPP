@@ -9,7 +9,6 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface ApiClient {
-
     @GET(ENDPOINT)
     suspend fun getListPokemon(): Response<ResultApi>
 
