@@ -13,12 +13,12 @@ import androidx.compose.ui.unit.dp
 
 // Función componible para agregar espacio vertical
 @Composable
-fun SpacerV(size: Dp = 500.dp){
+fun SpacerV(size: Dp = 5.dp){
     Spacer(modifier = Modifier.height(size))
 }
 
 // Función componible para agregar espacio horizontal
 @Composable
-fun SpacerH(size: Dp = 500.dp){
+fun SpacerH(size: Dp = 5.dp){
     Spacer(modifier = Modifier.width(size))
 }

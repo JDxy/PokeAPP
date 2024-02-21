@@ -35,6 +35,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
 import com.anluisa.gamesretrofit.util.Constants
+import com.pokemon.pokedexapp.components.SpacerV
 import com.pokemon.pokedexapp.domain.model.PokeItem
 import com.pokemon.pokedexapp.viewModel.PokemonViewModel
 
@@ -75,7 +76,8 @@ fun PokemonItem(pokemon: PokeItem) {
             .padding(10.dp)
     ) {
         Row(
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier.fillMaxWidth()
+                .padding(0.dp,80.dp,0.dp,0.dp),
             horizontalArrangement = Arrangement.Center
         ) {
             AsyncImage(
